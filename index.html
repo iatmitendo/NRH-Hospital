@@ -135,6 +135,71 @@ font-weight: 600;
 	font-weight: 400;
 	}
 
+	@media(max-width:790px){
+	.nav-links ul{
+		flex-direction:column;
+		margin-left:-40px;
+	}
+	
+	.nav-links li a{
+	text-align:center;
+}
+}
+
+@media (max-width:765px){
+ .order{
+	position:fixed;
+	height:100%;
+	width:300px;
+	top:0;
+	left:-100%;
+	background-color:#DFA974;
+	padding:20px;
+	z-index:100;
+	transition:all 0.4s;
+ }
+ 
+nav.active .order{
+	left:-0%;
+
+}
+
+
+.logo-bar .nav-links{
+	flex-direction:column;
+	padding-top:30px;
+}
+
+.nav-links li a{
+display:block;
+margin-top:20px;
+}
+
+.order .logo-toggle{
+display:block;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.order  .logo-toggle .siderbarclose{
+color:#fff;
+font-size:24px;
+cursor:pointer;
+display:block;
+}
+
+.logo-bar .siderbaropen{
+color:#fff;
+font-size:25px;
+padding:5px;
+cursor:pointer;
+display:block;
+}
+
+}
+
 
 	.banner-container{
 	position:relative;
@@ -830,4 +895,5 @@ body.addEventListener("click", e =>{
 
 </body>
 </html>
+
 
