@@ -763,6 +763,23 @@ Egbedore L. G. A., Osogbo, Osun State.</p></li>
 
 
 <script type="text/javascript">
+			const body = document.querySelector("body");
+const nav = document.querySelector("nav");
+const siderbarclose = document.querySelector(".siderbarclose");
+const siderbaropen = document.querySelector(".siderbaropen");
+
+// for navigation
+siderbaropen.addEventListener("click", () =>{
+	nav.classList.add("active");
+})
+
+body.addEventListener("click", e =>{
+	let clicked = e.target;
+	
+	if(!clicked.classList.contains("siderbaropen") && !clicked.classList.contains("order")){
+	nav.classList.remove("active");
+	}
+})
 
 	const banners = document.querySelectorAll(".banner");
 	let currentSlide = 0;
@@ -813,3 +830,4 @@ Egbedore L. G. A., Osogbo, Osun State.</p></li>
 
 </body>
 </html>
+
