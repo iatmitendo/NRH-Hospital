@@ -277,6 +277,18 @@ display:block;
 	border-radius:10px;
 	border:none;
 	padding:17px;
+	animation:button 3s 1s ease infinite;
+	}
+
+		@keyframes button{
+		0%, 100%{
+			transform: translateY(0);
+		}
+
+		50%{
+			transform: translateY(10px);
+		}
+
 	}
 
 	.banner button a{
@@ -287,6 +299,18 @@ display:block;
 	.banner button#contact{
 		background-color: #FAFAFA;
 		left: 57%;
+		animation:buttoncontact 3s 1s ease infinite;
+	}
+
+		@keyframes buttoncontact{
+		0%, 100%{
+			transform: translateY(0);
+		}
+
+		50%{
+			transform: translateY(10px);
+		}
+
 	}
 
 	.banner button#contact a{
@@ -329,12 +353,15 @@ display:block;
 	}
 
 		@media (max-width:765px){
-		.banner img{
-			width:120%;
-		}
+		.banner-container{
+		width:110%;
+		}		
 		.banner{
 		width:110%;
 		height:500px;
+		}	
+		.banner img{
+		width:110%;
 		}
 		
 	.banner-container button.prev,
@@ -359,7 +386,7 @@ display:block;
 	
 		.banner p{
 		text-align:left;
-		font-size:13px;
+		font-size:14px;
 		font-weight:400;
 		top:45%;
 		left:50%;
@@ -367,14 +394,38 @@ display:block;
 	
 		.banner button{
 	left:28%;
-	top:65%;
+	top:68%;
 	margin-right:10px;
 	padding:15px;
+	animation:button 3s 1s ease infinite;
+	}
+
+		@keyframes button{
+		0%, 100%{
+			transform: translateX(0);
+		}
+
+		50%{
+			transform: translateX(10px);
+		}
+
 	}
 			
 		.banner button#contact{
-		top:75%;
+		top:78%;
 		left: 28%;
+			animation: buttoncontact 3s 1s ease infinite;
+	}
+
+		@keyframes buttoncontact{
+		0%, 100%{
+			transform: translateX(0);
+		}
+
+		50%{
+			transform: translateX(10px);
+		}
+
 	}
 
 	.banner button a{
@@ -1040,6 +1091,7 @@ body.addEventListener("click", e =>{
 
 </body>
 </html>
+
 
 
 
