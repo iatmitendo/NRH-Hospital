@@ -464,7 +464,7 @@ display:block;
 
 <div class="nav-links">
 <ul>
-<li><a href="index.php">Home</a></li>
+<li><a href="index.html">Home</a></li>
 <li><a href="">About</a></li>
 <li><a href="">Services</a></li>
 <li><a href="">Contact</a></li>
@@ -595,3 +595,4 @@ body.addEventListener("click", e =>{
 
 </body>
 </html>
+
