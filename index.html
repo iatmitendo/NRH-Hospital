@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Share+Tech&display=swap" rel="stylesheet">
 
 	<title>NRH HOSPITAL</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 	<style type="text/css">
@@ -28,7 +29,6 @@
 	background-color:#FAFAFA;
 	padding: 30px 0;
 	width: 100%;
-	position:sticky;
 	top:0;
 	left:0;
 	z-index:999;
@@ -706,7 +706,7 @@ display:block;
 		width: 50px;
 		height: 50px;
 		font-size: 20px;
-		border: 2px solid #000;
+		border: 2px dotted;
 		border-radius: 50px;
 		background-color: #FAFAFA;
 		margin:0 auto;
@@ -770,7 +770,29 @@ display:block;
 		
 	}
 	
-	
+	.top{
+		width: 50px;
+		height: 50px;
+		background-color: #000;
+		position: fixed;
+		bottom: 50px;
+		right: 50px;
+		padding: 10px;
+		border-radius: 50%;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.top a{
+		text-decoration: none;
+		color: #FAFAFA;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: bold;
+	}
 
 	</style>
 
@@ -779,7 +801,7 @@ display:block;
 <body>
 
 <!--Header-->
-	<div class="header">
+	<div class="header" id="top">
 	<nav>
 <div class="logo-bar">
 
@@ -871,19 +893,19 @@ display:block;
 	<!--About us-->
 	<div class="aboutus">
 
-	<div class="aboutusimg">
+	<div class="aboutusimg" data-aos="flip-down" data-aos-duration="3000">
 	<img src="image/png6.png">
 	</div>
 
-	<div class="aboutusimg1">
+	<div class="aboutusimg1" data-aos="flip-left" data-aos-duration="3000">
 	<img src="image/png8.png">
 	</div>
 
-	<div class="aboutusimg2">
+	<div class="aboutusimg2" data-aos="flip-up" data-aos-duration="3000">
 	<img src="image/png9.png">
 	</div>
 
-	<div class="aboutustext">
+	<div class="aboutustext" data-aos="fade-right"  data-aos-duration="3000">
 	<h1>About Us</h1>
 	<p>Niklan Royalty Hospital is a leading healthcare provider <br> 
 	dedicated to delivering exceptional medical services. <br>
@@ -904,7 +926,7 @@ display:block;
 <p>At Niklan Royalty Hospital, we offer a comprehensive range <br> 
 of medical services to cater to the diverse needs of our patients. Our services include:</p>
 
-<div class="service-container">
+<div class="service-container" data-aos="zoom-in" data-aos-duration="3000">
 <i class="fa-solid fa-kit-medical"></i>
 <h1>Medical Specialties</h1>
 <p><span>Cardiology</span>: Advanced cardiac care, including diagnosis, treatment, and management of heart conditions.<br>
@@ -912,14 +934,14 @@ of medical services to cater to the diverse needs of our patients. Our services 
 <span>Pediatrics</span>: Specialized care for infants, children, and adolescents.</p>
 </div>
 
-<div class="service-container">
+<div class="service-container" data-aos="zoom-in" data-aos-duration="3000">
 <i class="fa-solid fa-stethoscope"></i>
 <h1>Diagnostic Services</h1>
 <p><span>Imaging</span>: State-of-the-art imaging services, including MRI, CT scans, and X-rays.<br>
 <span>Laboratory</span>: Advanced laboratory testing, including blood work and pathology.<p>
 </div>
 
-<div class="service-container">
+<div class="service-container" data-aos="zoom-in" data-aos-duration="3000">
 <i class="fa-solid fa-user-nurse"></i>
 <h1>Treatment Services</h1>
 <p><span>Surgery</span>: Expert surgical care, including minimally invasive procedures.<br>
@@ -928,7 +950,7 @@ of medical services to cater to the diverse needs of our patients. Our services 
 <span>Emergency Care</span>: 24/7 emergency services, staffed by experienced professionals.</p>
 </div>
 
-<div class="service-container">
+<div class="service-container" data-aos="zoom-in" data-aos-duration="3000">
 <i class="fa-solid fa-staff-snake"></i>
 <h1>Wellness Services</h1>
 <p><span>Health Check-ups</span>: Customized health check-ups and screenings.<br>
@@ -936,9 +958,9 @@ of medical services to cater to the diverse needs of our patients. Our services 
  </div>
 
 <div class="service-foot">	
-<img src="image/png11.jpg">
-<h1>Why Choose Us?</h1>
-<ul>
+<img src="image/png11.jpg" data-aos="fade-right" data-aos-duration="3000">
+<h1 data-aos="fade-up" data-aos-duration="3000">Why Choose Us?</h1>
+<ul data-aos="fade-up" data-aos-duration="3000">
 <li><a href=""><i class="fa-solid fa-staff-snake"></i>Expert medical team</a></li>
 <li><a href=""><i class="fa-solid fa-staff-snake"></i>State-of-the-art facilities</a></li>
 <li><a href=""><i class="fa-solid fa-staff-snake"></i>Personalized care</a></li>
@@ -953,7 +975,7 @@ of medical services to cater to the diverse needs of our patients. Our services 
 
 
 <!--Contact-->
-<div class="contact">
+<div class="contact" data-aos="flip-right" data-aos-duration="3000">
 	<h1>Contact Us</h1>
 <li><i class="fa-solid fa-location-dot" id="address"></i><p>10, Zone A Boripe Community, Rinsayo,
 Egbedore L. G. A., Osogbo, Osun State.</p></li>
@@ -981,10 +1003,9 @@ Egbedore L. G. A., Osogbo, Osun State.</p></li>
 </div>
 
 
-
-
-
-
+<div class="top">
+<a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+</div>
 
 
 
@@ -1061,160 +1082,10 @@ body.addEventListener("click", e =>{
 	})
 
 </script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
