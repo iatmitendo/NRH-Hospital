@@ -9,7 +9,10 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Share+Tech&display=swap" rel="stylesheet">	<title>About</title>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Share+Tech&display=swap" rel="stylesheet">	
+
+<title>About</title>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<style type="text/css">
 				*{
 			margin: 0;
@@ -243,28 +246,44 @@ display:block;
 /* animation:; */ 
 	}
 
-	.banner h1{
+	.banner h2{
 	position:absolute;
 	left:15%;
 	top:25%;
 	transform:translate(-50%,50%);
 	z-index:3;
-	color:#451D51;
-	font-weight:600;
+	font-weight:500;
 	font-size:18px;
 	text-transform: uppercase;
 	}
 
-	.banner h1 a{
+	.banner h2 a{
 	cursor: pointer;
 	color: #fff;
 	text-decoration: none;
+	}
+
+	.banner h2 i{
+		color:#451D51;
+		margin: 0 5px;
 	} 
+
+	.banner h1{
+	position:absolute;
+	left:22.5%;
+	top:35%;
+	transform:translate(-50%,50%);
+	z-index:3;
+	color:#fff;
+	font-weight:800;
+	font-size:28px;
+	text-transform: uppercase;
+	}
 	
 	.banner p{
 	position:absolute;
-	left:49.8%;
-	top:50%;
+	left:49.5%;
+	top:57%;
 	transform:translate(-50%,-50%);
 	z-index:3;
 	color:#fff;
@@ -443,12 +462,39 @@ display:block;
 			
 		}
 
+
+
+		.top{
+		width: 50px;
+		height: 50px;
+		background-color: #000;
+		position: fixed;
+		bottom: 50px;
+		right: 50px;
+		padding: 10px;
+		border-radius: 50%;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor:poninter;
+	}
+
+	.top a{
+		text-decoration: none;
+		color: #FAFAFA;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
 	</style>
 </head>
 <body>
 
 <!--Header-->
-	<div class="header">
+	<div class="header" id="top">
 	<nav>
 <div class="logo-bar">
 
@@ -486,32 +532,32 @@ display:block;
 
 	<div class="banner">
 	<div class="overlay"></div>
-	<h1><a href="index.php">Home</a> >> <a href="about.php">About</a></h1>
-	<p>Niklan Royalty Hospital offers world-class medical services with <br>
-	compassion and care. Our expert team and state-of-the-art facilities <br>
-	 ensure personalized attention for every patient. Trust us to deliver <br>
-	  exceptional healthcare, fit for royalty.</p>
+	<h2><a href="index.html">Home</a> <i class="fa-solid fa-arrow-right-long"></i> <a href="about.php">About</a></h2>
+	<h1>About Niklan Hospital</h1>
+	<p>Niklan Royalty Hospital offers world-class medical services with compassion and care</p>
 	<img src="image/png4.png" alt="banner img">
 	</div>
 
 	</div>
 
+
+
 	<!--About us-->
 	<div class="aboutus">
 
-	<div class="aboutusimg">
+	<div class="aboutusimg" data-aos="flip-down" data-aos-duration="3000">
 	<img src="image/png6.png">
 	</div>
 
-	<div class="aboutusimg1">
+	<div class="aboutusimg1" data-aos="flip-left" data-aos-duration="3000">
 	<img src="image/png8.png">
 	</div>
 
-	<div class="aboutusimg2">
+	<div class="aboutusimg2" data-aos="flip-up" data-aos-duration="3000">
 	<img src="image/png9.png">
 	</div>
 
-	<div class="aboutustext">
+	<div class="aboutustext" data-aos="fade-right"  data-aos-duration="3000">
 	<h1>About Us</h1>
 	<p>Niklan Royalty Hospital is a leading healthcare provider <br> 
 	dedicated to delivering exceptional medical services. <br>
@@ -522,6 +568,14 @@ display:block;
 	 Hospital, we strive for excellence in every aspect of care.</p>
 	</div>
 
+	</div>
+
+	<!---->
+
+
+
+	<div class="top">
+	<a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
 	</div>
 
 
@@ -591,8 +645,11 @@ body.addEventListener("click", e =>{
 	})
 
 </script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 
 </body>
 </html>
-
