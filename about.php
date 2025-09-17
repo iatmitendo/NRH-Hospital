@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Share+Tech&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Share+Tech&display=swap" rel="stylesheet">	<title>About</title>
+	<style type="text/css">
+				*{
+			margin: 0;
+			padding: 0;
+			font-family: 'Poppins', sans-serif;
+			box-sizing: border-box;
+		}
+		
+	.header{
+	display: flex;
+	align-items: center;
+	background-color:#FAFAFA;
+	padding: 30px 0;
+	width: 100%;
+	position:sticky;
+	top:0;
+	left:0;
+	z-index:999;
+}
+
+	.logo img{
+		margin-top: 3px;
+		margin-left: 440px;
+		width: 130px;
+	}
+
+	.logo h1{
+	position: absolute;
+	color: #451D51;
+	font-size: 30px;
+	font-weight: 600;
+	margin:0 20px;
+	margin-top:-5px;
+	}
+
+	.logo span{
+		color:#B0841A;
+	}
+
+.logo-bar{
+position: relative;
+height: 100%;
+max-width: 1000px;
+width: 100%;
+margin: 0 auto;
+padding: 0 30px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+
+.logo-bar .siderbaropen{
+color:#fff;
+font-size:25px;
+padding:5px;
+cursor:pointer;
+display:none;
+}
+
+@media (max-width:765px){
+	.header{
+	position:sticky;
+	width:110%;
+	padding:20px 0;	
+	}
+	.logo h1{
+	display:none;
+	}
+	.logo img{
+	margin-left:-10px;
+	width:150px;
+	}
+}
+
+.nav-links{
+display: flex;
+align-items: center;
+}
+
+	.nav-links li{
+	list-style-type: none;
+	margin: 0 25px;
+}
+
+
+	.nav-links li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 400;
+}
+
+	.nav-links li a:hover{
+		cursor: pointer;
+		transition: all 0.3s ease;
+		color: #fff;
+		background-color: #451D51;
+		padding: 30px 20px;
+	}
+
+nav .logo-bar .logo a{
+font-size: 25px;
+text-decoration: none;
+font-weight: 600;
+}
+
+.order .logo-toggle{
+	display:none;
+}
+
+	.nav-links ul{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left:100px;
+	}
+
+	.nav-links li{
+	list-style-type: none;
+	margin: 0 30px;
+	}
+
+	.nav-links li a{
+	text-decoration: none;
+	color: #451D51;
+	font-size: 18px;
+	font-weight: 400;
+	}
+
+	@media (max-width:765px){
+	.nav-links ul{
+		flex-direction:column;
+		margin-left:-40px;
+	}
+	.nav-links li{
+		margin:10px;
+	}
+		
+	.nav-links li a{
+	text-align:center;
+}
+	.nav-links li a:hover{
+		background-color:#fff;
+		padding:0;
+	}
+}
+
+@media (max-width:765px){
+ .order{
+	position:fixed;
+	height:100%;
+	width:350px;
+	top:0;
+	left:100%;
+	background-color:#FAFAFA;
+	z-index:100;
+	transition:all 0.4s ease;
+ }
+.order .logo{
+	margin-left:40px;
+	margin-top:30px;
+}
+	
+nav.active .order{
+	left:-0%;
+
+}
+
+.logo-bar .nav-links{
+	flex-direction:column;
+	padding-top:30px;
+}
+
+.nav-links li a{
+display:block;
+margin-top:20px;
+}
+
+.order .logo-toggle{
+display:block;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.order  .logo-toggle .siderbarclose{
+color:#451D51;
+margin-top:30px;
+margin-right:40px;
+font-size:30px;
+cursor:pointer;
+display:block;
+}
+
+.logo-bar .siderbaropen{
+color:#451D51;
+font-size:30px;
+margin-top:5px;
+margin-left:90px;
+padding:5px;
+cursor:pointer;
+display:block;
+}
+
+}
+
+
+	.banner-container{
+	position:relative;
+	width:100%;
+	overflow:hidden;
+	margin:auto;
+	background-color:#ddd;
+	}
+
+	.banner{
+	position:relative;
+	width:100%;
+	height:400px;
+	display:none;  
+	}
+
+	.banner img{
+	position:absolute;
+	height:100%;
+	width:100%;
+	z-index:1;
+	left:0;
+/* animation:; */ 
+	}
+
+	.banner h1{
+	position:absolute;
+	left:15%;
+	top:25%;
+	transform:translate(-50%,50%);
+	z-index:3;
+	color:#451D51;
+	font-weight:600;
+	font-size:18px;
+	text-transform: uppercase;
+	}
+
+	.banner h1 a{
+	cursor: pointer;
+	color: #fff;
+	text-decoration: none;
+	} 
+	
+	.banner p{
+	position:absolute;
+	left:49.8%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	z-index:3;
+	color:#fff;
+	font-size:18px;
+	width:80%;
+	font-weight:400;
+	}
+
+	.overlay{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.3);
+	z-index:2;
+	}
+
+
+		@media (max-width:765px){
+		.banner-container{
+		width:110%;
+		}		
+		.banner{
+		height:300px;
+		}	
+	
+	.banner h1{
+		left:39.5%;
+		font-size:23px;
+		font-weight:500;
+		top:5%;
+	}
+	
+		.banner p{
+		text-align:left;
+		font-size:14px;
+		font-weight:400;
+		top:45%;
+		left:50%;
+	}
+	
+	}
+
+
+		.aboutus{
+		display: flex;
+		background-image: url('image/png.png');
+		background-size:contain;
+		width:100%;
+		height: 1000px;
+	}
+
+	.aboutusimg img{
+		background-color:#FAFAFA;
+		width:350px;
+		height: 250px;
+		position: absolute;
+		z-index: 2;
+		border-radius: 10px;
+		box-shadow:2px 2px 2px rgba(0, 0, 0, 0.5) ;
+		margin:75px;
+		animation: img 3s 1s ease infinite;
+	}
+
+	@keyframes img{
+		0%, 100%{
+			transform: translateY(0);
+		}
+
+		50%{
+			transform: translateY(-10px);
+		}
+
+	}
+
+		.aboutusimg1 img{
+		background-color:#FAFAFA;
+		width:350px;
+		height: 250px;
+		position: absolute;
+		z-index: 2;
+		border-radius: 10px;
+		box-shadow:2px 2px 2px rgba(0, 0, 0, 0.5) ;
+		margin:330px;
+		animation: img1 3s 1s ease infinite;
+	}
+
+		@keyframes img1{
+		0%, 100%{
+			transform: translateX(0);
+		}
+
+		50%{
+			transform: translateX(10px);
+		}
+
+	}
+
+
+		.aboutusimg2 img{
+		background-color:#FAFAFA;
+		width:350px;
+		height: 250px;
+		position: absolute;
+		z-index: 2;
+		border-radius: 10px;
+		box-shadow:2px 2px 2px rgba(0, 0, 0, 0.5) ;
+		margin:584px;
+		margin-left: 75px;
+		animation: img2 3s 1s ease infinite;
+	}
+
+		@keyframes img2{
+		0%, 100%{
+			transform: translateY(0);
+		}
+
+		50%{
+			transform: translateY(10px);
+		}
+
+	}
+
+	
+	.aboutustext{
+		margin-top: 350px;
+		margin-left: 750px;
+	}
+
+	.aboutustext h1{
+		font-size: 23px;
+		font-weight: 800;
+		color:#B0841A ;
+	}
+
+	.aboutustext p{
+		padding:10px 0;
+		font-size: 17px;
+		font-weight:400;
+	}
+
+		@media (max-width:765px){
+			.aboutus{
+				width:110%;
+				height:1400px;
+			}
+		.aboutusimg img{
+			width:320px;
+			margin-left:10px;
+		}
+		.aboutusimg1 img{
+		width:320px;
+		margin-left:10px;
+		}
+		.aboutusimg2 img{
+		width:320px;
+		margin-left:10px;
+		}
+			
+	@keyframes img1{
+		0%, 100%{
+			transform: translateX(0);
+		}
+
+		50%{
+			transform: translateX(5px);
+		}
+
+	}
+
+	.aboutustext{
+	margin-top: 870px;
+	margin-left: 10px;	
+	}
+			
+		}
+
+	</style>
+</head>
+<body>
+
+<!--Header-->
+	<div class="header">
+	<nav>
+<div class="logo-bar">
+
+<div class="logo"><h1>NIKLAN ROYALTY <span>HOSPITAL</span></h1><img src="image/logo.png"></div>
+<i class="fa-solid fa-bars siderbaropen"></i>
+
+
+<div class="order">
+<div class="logo-toggle">
+<div class="logo"><img src="image/logo.png"></div>
+<i class="fa-solid fa-xmark siderbarclose"></i>
+</div>
+
+<div class="nav-links">
+<ul>
+<li><a href="index.php">Home</a></li>
+<li><a href="">About</a></li>
+<li><a href="">Services</a></li>
+<li><a href="">Contact</a></li>
+<li><a href="">FAQs</a></li>
+
+</ul>
+</div>
+
+</div>
+
+</div>
+
+</nav>
+	
+</div>	
+
+<!--Banner-->
+	<div class="banner-container" id="banner">
+
+	<div class="banner">
+	<div class="overlay"></div>
+	<h1><a href="index.php">Home</a> >> <a href="about.php">About</a></h1>
+	<p>Niklan Royalty Hospital offers world-class medical services with <br>
+	compassion and care. Our expert team and state-of-the-art facilities <br>
+	 ensure personalized attention for every patient. Trust us to deliver <br>
+	  exceptional healthcare, fit for royalty.</p>
+	<img src="image/png4.png" alt="banner img">
+	</div>
+
+	</div>
+
+	<!--About us-->
+	<div class="aboutus">
+
+	<div class="aboutusimg">
+	<img src="image/png6.png">
+	</div>
+
+	<div class="aboutusimg1">
+	<img src="image/png8.png">
+	</div>
+
+	<div class="aboutusimg2">
+	<img src="image/png9.png">
+	</div>
+
+	<div class="aboutustext">
+	<h1>About Us</h1>
+	<p>Niklan Royalty Hospital is a leading healthcare provider <br> 
+	dedicated to delivering exceptional medical services. <br>
+	 Our team of experts is committed to providing personalized <br>
+	care with compassion and precision. With state-of-the-art facilities, <br>
+	 we offer advanced treatments and procedures. We prioritize <br>
+	 patient well-being and safety above all else. At Niklan Royalty <br>
+	 Hospital, we strive for excellence in every aspect of care.</p>
+	</div>
+
+	</div>
+
+
+
+
+<script type="text/javascript">
+			const body = document.querySelector("body");
+const nav = document.querySelector("nav");
+const siderbarclose = document.querySelector(".siderbarclose");
+const siderbaropen = document.querySelector(".siderbaropen");
+
+// for navigation
+siderbaropen.addEventListener("click", () =>{
+	nav.classList.add("active");
+})
+
+body.addEventListener("click", e =>{
+	let clicked = e.target;
+	
+	if(!clicked.classList.contains("siderbaropen") && !clicked.classList.contains("order")){
+	nav.classList.remove("active");
+	}
+})
+
+	const banners = document.querySelectorAll(".banner");
+	let currentSlide = 0;
+	
+	
+	function showSlide(index){
+	//hide all banners
+	for(let i=0; i<banners.length; i++){
+	banners[i].style.display = "none";
+	}	
+	
+	//show current banners
+	banners[index].style.display = "block";
+	}
+	
+	function nextSlide(){
+	currentSlide++
+	
+	if(currentSlide >= banners.length){
+	currentSlide = 0;
+	}
+	
+	showSlide(currentSlide);
+	
+	}
+
+
+	
+	function prevSlide(){
+	currentSlide--;
+	if(currentSlide < 0){
+	currentSlide0 = banners.length - 1;
+	}
+	
+	showSlide(currentSlide);
+	
+	}
+	
+	document.addEventListener("DOMContentLoaded", function(){
+	showSlide(currentSlide);
+	
+	setInterval(nextSlide, 10000);
+	
+	})
+
+</script>
+
+
+</body>
+</html>
